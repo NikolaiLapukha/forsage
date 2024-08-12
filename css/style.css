@@ -694,6 +694,8 @@ body{
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
 .form__title{
     font-size: 40px;
@@ -972,8 +974,6 @@ body{
         width: 100%;
     }
     .form__top{
-        flex-wrap: wrap;
-        row-gap: 30px;
         justify-content: center;
     }
     .form__text{
