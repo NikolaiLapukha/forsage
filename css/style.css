@@ -728,19 +728,20 @@ body{
     margin: 120px auto 83px;
 }
 .form__inputs{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     column-gap: 57px;
     row-gap: 30px;
     margin: 0 auto;
     max-width: 1244px;
 }
+
 .form__input{
     background-color: transparent;
     border-bottom: 2px solid rgb(224, 224, 224);
     color: #E0E0E0;
     width: 331px;
     transition: all 0.3s ease 0s;
+    margin-top: 69px;
 }
 .form__input::placeholder{
     line-height: 29px;
@@ -890,6 +891,7 @@ body{
     .services__smoke{
         width: 100%;
     }
+
 }
 @media (max-width:830px){
     .header{
