@@ -682,11 +682,7 @@ body{
     bottom: 0;
     right: 0;
 }
-.form__smoke-left{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 .form__smoke-lefttwo{
     position: absolute;
     left: 0;
