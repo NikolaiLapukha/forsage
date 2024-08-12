@@ -682,11 +682,20 @@ body{
     bottom: 0;
     right: 0;
 }
-
 .form__smoke-lefttwo{
     position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
+}
+.form__wheels{
+    position: absolute;
+    bottom: -57px;
+    right: 0;
+    z-index: 45;
+    max-width: 580px;
+    max-height: 480px;
 }
 .form__top{
     display: flex;
@@ -749,7 +758,7 @@ body{
     width: 331px;
     transition: all 0.3s ease 0s;
 }
-.form__input::placeholder{
+.form__input::-moz-placeholder{
     line-height: 29px;
     color: #e0e0e0;
     margin-bottom: 10px;
@@ -854,6 +863,9 @@ body{
     }
     .services{
         margin-top: 235px;
+    }
+    .form__wheels{
+        display: none;
     }
 }
 @media (max-width:1330px){
@@ -1032,6 +1044,13 @@ body{
     .work__wrap{
         margin-bottom: 40px;
     }
+    .form__bottom-decor::after,
+    .form__bottom-decor::before{
+        display: none;
+    }
+    .form{
+        margin-top: 100px;
+    }
 }
 @media (max-width: 380px){
     .phone-link{
@@ -1042,5 +1061,8 @@ body{
     }
     .header__title{
         font-size: 50px;
+    }
+    .form{
+        margin-top: 50px;
     }
 }
