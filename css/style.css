@@ -42,6 +42,7 @@ body{
     font-family: Montserrat;
     font-weight: 500;
     font-size: 24px;
+    background: linear-gradient(270.00deg, rgb(249, 249, 249) 0%,rgb(255, 255, 255) 100%);
 }
 /* ========================= */
 [class*="__container"]{
@@ -837,6 +838,35 @@ body{
     top: 50%;
     position: absolute;
     border: 1px dashed rgb(224, 224, 224);
+}
+/* ===============cars================= */
+.cars{
+    margin: 143px 0 200px;
+    
+}
+.cars__title{
+    text-align: center;
+}
+.cars__text{
+    text-align: center;
+    margin: 16px 0 80px;
+}
+.cars__items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 40px;
+    row-gap: 60px;
+}
+.cars__item{
+    background-color: #fff;
+    padding: 20px 20px 40px;
+}
+.cars__item-title{
+    font-size: 30px;
+    line-height: 37px;
+}
+.cars__item-title::first-letter{
+    color: #3AC22C;
 }
 /* ===========adaptive================= */
 @media (max-width: 1500px) {
