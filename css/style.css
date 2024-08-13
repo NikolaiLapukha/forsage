@@ -864,9 +864,51 @@ body{
 .cars__item-title{
     font-size: 30px;
     line-height: 37px;
+    font-weight: 600;
+}
+.cars__item-title>span{
+    font-weight: 500;
 }
 .cars__item-title::first-letter{
     color: #3AC22C;
+}
+.cars__item-img{
+    margin-bottom: 34px;
+}
+.cars__item-text{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 48px 0 34px;
+}
+.cars__item-text>span{
+    font-size: 16px;
+    color: #BDBDBD;
+    margin-left: 12px;
+}
+.cars__item-block{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.cars__block-item{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+}
+.cars__item-link{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 23px 60px;
+    background: linear-gradient(90.00deg, rgb(58, 194, 44),rgb(60, 213, 45) 100%);
+    color: #fff;
+    margin: 70px auto 0;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    width: 275px;
 }
 /* ===========adaptive================= */
 @media (max-width: 1500px) {
