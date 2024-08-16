@@ -44,6 +44,18 @@ body{
     font-size: 24px;
     background: linear-gradient(270.00deg, rgb(249, 249, 249) 0%,rgb(255, 255, 255) 100%);
 }
+.button::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    filter: blur(37px);
+    background: #3AC22C;
+}
 /* ========================= */
 [class*="__container"]{
     max-width: 1550px;
@@ -159,6 +171,7 @@ body{
     border: 1px solid #3AC22C;
     box-sizing: border-box;
 	border-radius: 50px;
+    position: relative;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
@@ -208,7 +221,18 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-};
+}
+.header__item-circle::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(16px);
+    background: linear-gradient(90.00deg, rgb(58, 194, 44),rgb(60, 213, 45) 100%);
+}
 .in-circle{
     width: 46px;
     height: 46px;
@@ -779,6 +803,7 @@ body{
 }
 .form__button{
     margin-top: 83px;
+    position: relative;
     width: 290px;
     padding: 23px 60px;
     border-radius: 50px;
@@ -1078,6 +1103,8 @@ body{
     color: #fff;
     margin: 60px auto 0;
     display: flex;
+    position: relative;
+    z-index: 2;
     text-align: center;
     border: 1px solid #3AC22C;
     background: linear-gradient(90.00deg, rgb(58, 194, 44),rgb(60, 213, 45) 100%);
