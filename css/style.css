@@ -214,7 +214,6 @@ body{
 .header__item-circle{
     width: 66px;
     height: 66px;
-    background: linear-gradient(90.00deg, rgb(58, 194, 44),rgb(60, 213, 45) 100%);
     opacity: 0.4;
     border-radius: 50%; 
     display: flex;
@@ -1077,6 +1076,7 @@ body{
     font-weight: 700;
     line-height: 24px;
     color: #fff;
+    margin-bottom: 20px;
 }
 .review__item-title::first-letter{
     color: #3AC22C;
@@ -1141,6 +1141,11 @@ body{
     }
     .form__wheels{
         display: none;
+    }
+    .review__slide-block{
+        padding-left: 30px;
+        align-items: center;
+        width: 100%;
     }
 }
 @media (max-width:1330px){
@@ -1275,6 +1280,13 @@ body{
     }
     .cars{
         margin: 100px 0;
+    }
+    .review-slide{
+        display: flex;
+        flex-direction: column;
+    }
+    .review-slide-img{
+        flex: none;
     }
 }
 @media (max-width: 535px){
