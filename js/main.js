@@ -45,3 +45,14 @@ new Swiper('.work__slider', {
         prevEl: '.swiper-button-prev',
     },
 });
+new Swiper('.review__slider',{
+    loop: true,
+    pagination: {
+        el: '.review__pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
